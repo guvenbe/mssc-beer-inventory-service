@@ -40,7 +40,6 @@ public class BeerDto implements Serializable {
     private String beerName;
 
     @NotNull
-
     private String beerStyle;
 
     @NotNull

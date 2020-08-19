@@ -13,7 +13,7 @@ public class JmsConfig {
 
 
     @Bean
-    public MessageConverter messageConverter(ObjectMapper objectMapper){
+    public MessageConverter jacksonJmsMessageConverter(ObjectMapper objectMapper){
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
         converter.setTargetType(MessageType.TEXT);
         converter.setTypeIdPropertyName("_type");
